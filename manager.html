@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="favicon.ico">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
@@ -29,13 +29,41 @@
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <ul class="sid_top nav">
-                            <li><a href="#">SEARCH <img src="assets/img/nav/search.png"></a></li>
+                        <ul class="sid_top nav navbar">
+                            <li><a href="#">SEARCH <img src="assets/img/nav/search.png" class="search-i"></a></li>
                             <li><a href="#">ABOUT</a></li>
                             <li><a href="#">PRICING</a></li>
-                            <li><a href="#">SIGN IN</a></li>
-                            <li>|</li>
-                            <li><a href="#">LOGIN</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <img src="assets/img/user.png" class="user-img">
+                                </a>
+                                <div class="ulser-ligts dropdown-menu dropdown-menu-end fade-down">
+                                    <div class="user-tops">
+                                        <div class="img">
+                                            <img src="assets/img/user.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="h5 name">Miyamoto</div>
+                                            <div class="eMail">Hiyorimiyamoto@mail.com</div>
+                                            <a href="#" class="edit-user theme-btn">Edit Profile</a>
+                                        </div>
+                                    </div>
+                                    <ul class="ous_list">
+                                        <li><a href="#"><img src="assets/img/user/clock.png"> ACTIVITY</a></li>
+                                        <li><a href="#"><img src="assets/img/user/union.png"> FAVORITES</a></li>
+                                        <li><a href="#"><img src="assets/img/user/dwonload.png"> MANAGER</a></li>
+                                        <li><a href="#"><img src="assets/img/user/grid.png"> COLLECTION</a></li>
+                                    </ul>
+                                    <ul class="ous_list">
+                                        <li><a href="#"><img src="assets/img/user/pc.png"> USERS</a></li>
+                                        <li><a href="#"><img src="assets/img/user/card.png"> SUBSCRIPTION</a></li>
+                                        <li><a href="#"><img src="assets/img/user/support.png"> SUPPORT</a></li>
+                                    </ul>
+                                    <ul class="ous_list pb-0">
+                                        <li><a href="#"><img src="assets/img/user/off.png"> SIGN OUT</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -132,34 +160,31 @@
         </div>
     </nav>
 
-    <div class="ocassion-card-banner">
+    <div class="dashboard-menu-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="ocassion-card-banner-content">
-                        <div class="ocassion-card-banner-img">
-                            <img src="assets/img/thank1.png">
-                            <img src="assets/img/thank2.png">
-                            <img src="assets/img/thank3.png">
-                        </div>
-                        <div class="ocassion-card-banner-text">
-                            <div class="h2">Thank You Cards</div>
-                            <p>When someone touches you with kindness, thank them with a card. Print, Download or send
-                                online as eCard.</p>
-                        </div>
-                    </div>
+                    <ul class="dashboard-menu-content">
+                        <li><a href="#" ><img src="assets/img/user/clock.png"> ACTIVITY</a></li>
+                        <li><a href="#"><img src="assets/img/user/profile.png"> PROFILE</a></li>
+                        <li><a href="#" ><img src="assets/img/user/union.png"> FAVORITES</a></li>
+                        <li><a href="#" class="active"><img src="assets/img/user/dwonload.png"> MANAGER</a></li>
+                        <li><a href="#"><img src="assets/img/user/grid.png"> COLLECTION</a></li>
+                        <li><a href="#"><img src="assets/img/user/pc.png"> USERS</a></li>
+                        <li><a href="#"><img src="assets/img/user/card.png"> SUBSCRIPTION</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="product-listing-area">
+    <div class="favorites-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="product-list-main">
                         <div class="product-list">
-                            <ul class="product-ul">
+                            <ul class="product-ul"> 
                                 <div class="list-search">
                                     <form action="/">
                                         <input type="search">
@@ -172,6 +197,7 @@
                                 <li><a href="#">Graduation</a></li>
                                 <li><a href="#">Teacher appreciation</a></li>
                                 <li><a href="#">Wedding</a></li>
+                                <li><a href="#" class="more">More</a></li>
                             </ul>
                             <ul class="product-ul">
                                 <div class="product-list-title">
@@ -338,7 +364,7 @@
                                         <span> Golden shrimp</span>
                                         <i class="fa-solid fa-heart"></i>
                                     </div>
-                                </a>
+                                </a> 
                                 <a href="#" class="product-ty-item">
                                     <img src="assets/img/ty13.png" alt="ty">
                                     <div class="ty-text">
@@ -367,101 +393,13 @@
                                         <i class="fa-solid fa-heart"></i>
                                     </div>
                                 </a>
-                                <a href="#" class="product-ty-item">
-                                    <img src="assets/img/ty17.png" alt="ty">
-                                    <div class="ty-text">
-                                        <span> Golden shrimp</span>
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </a>
-                                <a href="#" class="product-ty-item">
-                                    <img src="assets/img/ty18.png" alt="ty">
-                                    <div class="ty-text">
-                                        <span> Golden shrimp</span>
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </a>
-                                <a href="#" class="product-ty-item">
-                                    <img src="assets/img/ty19.png" alt="ty">
-                                    <div class="ty-text">
-                                        <span> Golden shrimp</span>
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </a>
-                                <a href="#" class="product-ty-item">
-                                    <img src="assets/img/ty20.png" alt="ty">
-                                    <div class="ty-text">
-                                        <span> Golden shrimp</span>
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </a>
-                                <a href="#" class="product-ty-item">
-                                    <img src="assets/img/ty21.png" alt="ty">
-                                    <div class="ty-text">
-                                        <span> Golden shrimp</span>
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </a>
-                                <a href="#" class="product-ty-item">
-                                    <img src="assets/img/ty22.png" alt="ty">
-                                    <div class="ty-text">
-                                        <span> Golden shrimp</span>
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </a>
-                                <a href="#" class="product-ty-item">
-                                    <img src="assets/img/ty23.png" alt="ty">
-                                    <div class="ty-text">
-                                        <span> Golden shrimp</span>
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </a>
-                                <a href="#" class="product-ty-item">
-                                    <img src="assets/img/ty24.png" alt="ty">
-                                    <div class="ty-text">
-                                        <span> Golden shrimp</span>
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </a>
                             </div>
                             <div class="product-pagination py-80">
-                                <ul class="pagination">
-                                    <li><a href="#" class="active">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#"><i class="fa-solid fa-arrow-right"></i></a></li>
-                                </ul>
+                                <div class="favorites-btn text-center">
+                                    <a href="#" class="theme-btn">Browse more card</a>
+                                </div>
                             </div>
-                            <div class="product-thank pb-80">
-                                <div class="h5">Thank you cards</div>
-                                <br>
-                                <p>
-                                    It’s good manners to say, “Thank you,” and we make it easy with your choice of
-                                    designs, all available as a Printable Card or digital eCard.
-                                    <br>
-                                    <br>
-                                    Your personalized, hand-signed Thank You card will make an impression that lasts,
-                                    and our note templates make it a commitment of minutes to create a custom card you
-                                    print on your printer, download to a file, or have printed at a local shop. The same
-                                    card can travel online from our site as a virtual Card via your computer, phone, or
-                                    tablet to extend your thanks in high-tech fashion. Printed or posted, all our cards
-                                    are free, so what are you waiting for?
-                                    <br>
-                                    <br>
-                                    Get started by clicking on a Thank You Card design, then click Customize. It doesn’t
-                                    take long to add your personal touch. Insert a photo, change font styles or colors,
-                                    or add stickers from the Stickers Menu. Edit the text to include the name of the
-                                    person receiving your thanks, or add a grateful line or two of your own. Finally,
-                                    choose whether you’ll print, download, or send it as an e thank you card, and follow
-                                    the guided steps to complete your card.
-                                    <br>
-                                    <br>
-                                    Following up your spoken “Thanks” with a written expression of gratitude multiplies
-                                    the impact of your words and makes them ring with authenticity. So much accomplished
-                                    with so little effort!
-                                </p>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
