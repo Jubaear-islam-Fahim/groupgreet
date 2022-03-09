@@ -3037,6 +3037,7 @@ p {
   .log-bar .nav-link.dropdown-toggle {
     padding: 4px;
   }
+  .users-table,
   .activity-record {
     overflow: hidden;
     overflow-x: scroll;
@@ -3052,6 +3053,21 @@ p {
   }
   .favorites-area .product-list-content .product-ty {
     padding: 39px 0 0 0px;
+  }
+  .user-ii ul {
+    -ms-grid-columns: 1fr 21% 19%;
+        grid-template-columns: 1fr 21% 19%;
+  }
+  .users-table th, .users-table td {
+    min-width: 160px;
+  }
+  .users-table th:first-child, .users-table td:first-child {
+    min-width: 208px;
+  }
+  .footer-area .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -3163,6 +3179,18 @@ p {
   }
   .profile-connect .login-gf li a {
     font-size: 14px;
+  }
+  .subscript-active .subscript-active-box,
+  .user-ii ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .subscript-active {
+    margin-top: 40px;
+  }
+  .subscript-active .subscript-active-box .butn {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

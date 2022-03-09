@@ -3137,6 +3137,7 @@ p {
             padding: 4px ;
         }
     }
+    .users-table,
     .activity-record { 
         overflow: hidden;
         overflow-x: scroll;
@@ -3153,6 +3154,22 @@ p {
     }
     .favorites-area .product-list-content .product-ty {
         padding: 39px 0 0 0px;
+    }
+    .user-ii ul {
+        
+        grid-template-columns: 1fr 21% 19%;
+    }
+
+    .users-table th, .users-table td{
+        &:first-child{
+            min-width: 208px;
+        }
+        min-width: 160px;
+    }
+    .footer-area{
+        .row{
+            justify-content: center;
+        }
     }
 
 }
@@ -3282,5 +3299,17 @@ p {
     }
     .profile-connect .login-gf li a{
         font-size: 14px;
+    }
+    .subscript-active .subscript-active-box,
+    .user-ii ul {
+        
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .subscript-active {
+        margin-top: 40px;
+    } 
+    .subscript-active .subscript-active-box .butn {
+        margin-left: 0;
     }
 }
