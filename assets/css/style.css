@@ -718,7 +718,6 @@ p {
 
 .testimonial-left .h1 {
   font-weight: normal;
-  font-size: 40px;
   line-height: 60px;
   color: #393939;
   max-width: 373px;
@@ -1388,6 +1387,7 @@ p {
 
 .about-banner-area {
   position: relative;
+  z-index: 1;
 }
 
 .about-banner-area::after, .about-banner-area::before {
@@ -1399,6 +1399,7 @@ p {
   background-size: cover;
   background-position: center;
   top: -38px;
+  z-index: -1;
 }
 
 .about-banner-area::after {
@@ -2810,6 +2811,105 @@ p {
     -webkit-box-align: start !important;
         -ms-flex-align: start !important;
             align-items: flex-start !important;
+  }
+  .phone-logins a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #393939;
+  }
+  .phone-logins span {
+    margin: 0 10px;
+  }
+  .phone-toggler {
+    border: 2px solid #393939;
+    outline: none;
+    padding: 7px 10px;
+    color: #393939;
+    outline: none !important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .navbar-toggler:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .phone-search-box {
+    position: relative;
+  }
+  .phone-search-box input {
+    padding: 7px 40px 7px 15px;
+  }
+  .phone-search-box .btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .navbar_area .all_occasions {
+    -webkit-column-count: 1;
+            column-count: 1;
+    gap: 24px;
+    padding: 4px 0 0 15px;
+  }
+  .navbar_area .seasonal-cc {
+    padding: 20px 15px 25px;
+  }
+  .navbar_area .all_occasions a {
+    line-height: 33px;
+    font-size: 16px;
+    display: block;
+  }
+  .sign-right {
+    display: none;
+  }
+  .features-content,
+  .hero-content,
+  .sign-area {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .card-time-item .card-img {
+    padding-bottom: 20px;
+  }
+  .testimonial-area::after {
+    top: 50%;
+  }
+  .testimonial-left .h1 {
+    max-width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .questions-area p br {
+    display: none;
+  }
+  .questions-area .accordion-button, .questions-area .accordion-button:not(.collapsed) {
+    line-height: 28px;
+  }
+  .footer-area .footer-widte-content {
+    gap: 26px;
+    margin-top: 30px;
+  }
+  .car-row {
+    row-gap: 40px;
+  }
+  .reasons-greetions-content {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .pricing-banner::before, .pricing-banner::after {
+    width: 266px;
+    height: 125px;
+  }
+  .pricing-banner .pricing-title {
+    padding: 70px 0 50px;
+  }
+  .pricing-banner .pricing-title .h2 {
+    margin-bottom: 28px;
+  }
+  .pricing-content {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 /*# sourceMappingURL=style.css.map */
