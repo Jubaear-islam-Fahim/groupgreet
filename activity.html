@@ -22,17 +22,17 @@
         <div class="header-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 align-self-center">
                         <div class="logo-top">
                             <a href="index.html" class="logo_tt"><img src="assets/img/logo.png" alt="logo"></a>
                             <a href="#" class="try_bgn">TRY DEMO NOW FOR FREE!</a>
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <ul class="sid_top nav navbar">
-                            <li><a href="#">SEARCH <img src="assets/img/nav/search.png" class="search-i"></a></li>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">PRICING</a></li>
+                        <ul class="sid_top nav navbar log-bar">
+                            <li><a href="#">SEARCH <img class="navSear" src="assets/img/nav/search.png"></a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="pricing.html">PRICING</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                                     <img src="assets/img/user.png" class="user-img">
@@ -49,113 +49,169 @@
                                         </div>
                                     </div>
                                     <ul class="ous_list">
-                                        <li><a href="#"><img src="assets/img/user/clock.png"> ACTIVITY</a></li>
-                                        <li><a href="#"><img src="assets/img/user/union.png"> FAVORITES</a></li>
-                                        <li><a href="#"><img src="assets/img/user/dwonload.png"> MANAGER</a></li>
-                                        <li><a href="#"><img src="assets/img/user/grid.png"> COLLECTION</a></li>
+                                        <li><a href="activity.html"><img src="assets/img/user/clock.png"> ACTIVITY</a></li>
+                                        <li><a href="favorites.html"><img src="assets/img/user/union.png"> FAVORITES</a></li>
+                                        <li><a href="manager.html"><img src="assets/img/user/dwonload.png"> MANAGER</a></li>
+                                        <li><a href="collection.html"><img src="assets/img/user/grid.png"> COLLECTION</a></li>
                                     </ul>
                                     <ul class="ous_list">
-                                        <li><a href="#"><img src="assets/img/user/pc.png"> USERS</a></li>
-                                        <li><a href="#"><img src="assets/img/user/card.png"> SUBSCRIPTION</a></li>
+                                        <li><a href="users.html"><img src="assets/img/user/pc.png"> USERS</a></li>
+                                        <li><a href="subscription.html"><img src="assets/img/user/card.png"> SUBSCRIPTION</a></li>
                                         <li><a href="#"><img src="assets/img/user/support.png"> SUPPORT</a></li>
                                     </ul>
                                     <ul class="ous_list pb-0">
-                                        <li><a href="#"><img src="assets/img/user/off.png"> SIGN OUT</a></li>
+                                        <li><a href="index.html"><img src="assets/img/user/off.png"> SIGN OUT</a></li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-
+            </div> 
         </div>
-    </header>
+    </header> 
     <nav class="navbar navbar-expand-lg navbar_area sticky-top">
-        <div class="container">
-            <a class="navbar-brand mobile-show" href="#">
+        <div class="container-fluid"> 
+            <button class="navbar-toggler phone-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="fa-solid fa-bars"></span>
+            </button>
+            <a class="navbar-brand mobile-show" href="index.html">
                 <img src="assets/img/logo.png" alt="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="main_nav">
-                <ul class="navbar-nav menu_list">
-                    <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> ALL OCCASIONS </a>
-                        <div class="dropdown-menu megamenu container fade-down" role="menu">
-                            <div class="row g-3">
-                                <div class="col-lg-9 col-12">
-                                    <div class="col-megamenu">
-                                        <ul class="all_occasions">
-                                            <li><a href="#">Anniversary</a></li>
-                                            <li><a href="#">Any</a></li>
-                                            <li><a href="#">Baby</a></li>
-                                            <li><a href="#">Birthday</a></li>
-                                            <li><a href="#">Birthday by Profession</a></li>
-                                            <li><a href="#">Coach Appreciation</a></li>
-                                            <li><a href="#">Congratulations</a></li>
-                                            <li><a href="#">Encouragement</a></li>
-                                            <li><a href="#">Farewell</a></li>
-                                            <li><a href="#">Get Well Soon</a></li>
-                                            <li><a href="#">Graduation</a></li>
-                                            <li><a href="#">GrupGreeting Gives</a></li>
-                                            <li><a href="#">Just Because</a></li>
-                                            <li><a href="#">Military Appreciation</a></li>
-                                            <li><a href="#">Retirement</a></li>
-                                            <li><a href="#">Sympathy</a></li>
-                                            <li><a href="#">Teacher Appreciation</a></li>
-                                            <li><a href="#">Thank you</a></li>
-                                            <li><a href="#">Thinking of You</a></li>
-                                            <li><a href="#">Wedding</a></li>
-                                            <li><a href="#">Welcome</a></li>
-
-                                        </ul>
-                                    </div>
+            <div class="mobile-show"> 
+                <ul class="login-nav log-bar">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <img src="assets/img/user.png" class="user-img">
+                        </a>
+                        <div class="ulser-ligts dropdown-menu dropdown-menu-end fade-down">
+                            <div class="user-tops">
+                                <div class="img">
+                                    <img src="assets/img/user.png" alt="">
                                 </div>
-                                <div class="col-lg-3 col-6">
-                                    <div class="col-megamenu">
-                                        <div class="seasonal-cc">
-                                            <h6 class="title">SEASONAL</h6>
-                                            <ul class="list-unstyled">
-                                                <li><a href="#">St. Patrick’s Day <span>(Mar 17)</span></a></li>
-                                                <li><a href="#">Easter <span>(Mar 17)</span></a></li>
-                                                <li><a href="#">Admin Day <span>(Mar 17)</span></a></li>
+                                <div class="text">
+                                    <div class="h5 name">Miyamoto</div>
+                                    <div class="eMail">Hiyorimiyamoto@mail.com</div>
+                                    <a href="#" class="edit-user theme-btn">Edit Profile</a>
+                                </div>
+                            </div>
+                            <ul class="ous_list">
+                                <li><a href="activity.html"><img src="assets/img/user/clock.png"> ACTIVITY</a></li>
+                                <li><a href="favorites.html"><img src="assets/img/user/union.png"> FAVORITES</a></li>
+                                <li><a href="manager.html"><img src="assets/img/user/dwonload.png"> MANAGER</a></li>
+                                <li><a href="collection.html"><img src="assets/img/user/grid.png"> COLLECTION</a></li>
+                            </ul>
+                            <ul class="ous_list">
+                                <li><a href="users.html"><img src="assets/img/user/pc.png"> USERS</a></li>
+                                <li><a href="subscription.html"><img src="assets/img/user/card.png"> SUBSCRIPTION</a></li>
+                                <li><a href="#"><img src="assets/img/user/support.png"> SUPPORT</a></li>
+                            </ul>
+                            <ul class="ous_list pb-0">
+                                <li><a href="index.html"><img src="assets/img/user/off.png"> SIGN OUT</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul> 
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="assets/img/logo.png" alt="logo">
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mobile-show sid_top_phone">
+                        <li>
+                            <form action="" class="phone-search-box">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="pricing.html">PRICING</a></li> 
+                    </ul>
+                    <ul class="navbar-nav menu_list justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> ALL OCCASIONS </a>
+                            <div class="dropdown-menu megamenu container fade-down" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-lg-9 col-12">
+                                        <div class="col-megamenu">
+                                            <ul class="all_occasions">
+                                                <li><a href="ocassion-anniversary.html">Anniversary</a></li>
+                                                <li><a href="ocassion-anniversary.html">Any</a></li>
+                                                <li><a href="ocassion-anniversary.html">Baby</a></li>
+                                                <li><a href="ocassion-anniversary.html">Birthday</a></li>
+                                                <li><a href="ocassion-anniversary.html">Birthday by Profession</a></li>
+                                                <li><a href="ocassion-anniversary.html">Coach Appreciation</a></li>
+                                                <li><a href="ocassion-anniversary.html">Congratulations</a></li>
+                                                <li><a href="ocassion-anniversary.html">Encouragement</a></li>
+                                                <li><a href="ocassion-anniversary.html">Farewell</a></li>
+                                                <li><a href="ocassion-anniversary.html">Get Well Soon</a></li>
+                                                <li><a href="ocassion-anniversary.html">Graduation</a></li>
+                                                <li><a href="ocassion-anniversary.html">GrupGreeting Gives</a></li>
+                                                <li><a href="ocassion-anniversary.html">Just Because</a></li>
+                                                <li><a href="ocassion-anniversary.html">Military Appreciation</a></li>
+                                                <li><a href="ocassion-anniversary.html">Retirement</a></li>
+                                                <li><a href="ocassion-anniversary.html">Sympathy</a></li>
+                                                <li><a href="ocassion-anniversary.html">Teacher Appreciation</a></li>
+                                                <li><a href="ocassion-anniversary.html">Thank you</a></li>
+                                                <li><a href="ocassion-anniversary.html">Thinking of You</a></li>
+                                                <li><a href="ocassion-anniversary.html">Wedding</a></li>
+                                                <li><a href="ocassion-anniversary.html">Welcome</a></li>
+
                                             </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-12">
+                                        <div class="col-megamenu">
+                                            <div class="seasonal-cc">
+                                                <h6 class="title">SEASONAL</h6>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">St. Patrick’s Day <span>(Mar 17)</span></a></li>
+                                                    <li><a href="#">Easter <span>(Mar 17)</span></a></li>
+                                                    <li><a href="#">Admin Day <span>(Mar 17)</span></a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"> <img src="assets/img/nav/baby.png"> BABY </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"> <img src="assets/img/nav/anniv.png"> ANNIVERSARY </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"> <img src="assets/img/nav/sympatht.png"> SYMPATHY </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"> <img src="assets/img/nav/farewfll.png"> FAREWELL </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"> <img src="assets/img/nav/birthday.png"> BIRTHDAY </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"> NEW </a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mobile-show sid_top_phone">
-                    <li><a href="#">SEARCH <img src="assets/img/nav/search.png"></a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">PRICING</a></li>
-                    <li><a href="#">SIGN IN</a></li>
-                    <li>|</li>
-                    <li><a href="#">LOGIN</a></li>
-                </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ocassion-anniversary.html"> <img src="assets/img/nav/baby.png">
+                                BABY
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ocassion-anniversary.html"> <img src="assets/img/nav/anniv.png">
+                                ANNIVERSARY </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ocassion-anniversary.html"> <img
+                                    src="assets/img/nav/sympatht.png">
+                                SYMPATHY </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ocassion-anniversary.html"> <img
+                                    src="assets/img/nav/farewfll.png">
+                                FAREWELL </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ocassion-anniversary.html"> <img
+                                    src="assets/img/nav/birthday.png">
+                                BIRTHDAY </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ocassion-anniversary.html"> NEW </a>
+                        </li>
+                    </ul>
+                    
+                </div>
             </div>
         </div>
     </nav>
@@ -165,13 +221,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="dashboard-menu-content">
-                        <li><a href="#" class="active"><img src="assets/img/user/clock.png"> ACTIVITY</a></li>
-                        <li><a href="#"><img src="assets/img/user/profile.png"> PROFILE</a></li>
-                        <li><a href="#"><img src="assets/img/user/union.png"> FAVORITES</a></li>
-                        <li><a href="#"><img src="assets/img/user/dwonload.png"> MANAGER</a></li>
-                        <li><a href="#"><img src="assets/img/user/grid.png"> COLLECTION</a></li>
-                        <li><a href="#"><img src="assets/img/user/pc.png"> USERS</a></li>
-                        <li><a href="#"><img src="assets/img/user/card.png"> SUBSCRIPTION</a></li>
+                        <li><a href="activity.html" class="active"><img src="assets/img/user/clock.png"> ACTIVITY</a></li>
+                        <li><a href="profile.html"><img src="assets/img/user/profile.png"> PROFILE</a></li>
+                        <li><a href="favorites.html"><img src="assets/img/user/union.png"> FAVORITES</a></li>
+                        <li><a href="manager.html"><img src="assets/img/user/dwonload.png"> MANAGER</a></li>
+                        <li><a href="collection.html"><img src="assets/img/user/grid.png"> COLLECTION</a></li>
+                        <li><a href="users.html"><img src="assets/img/user/pc.png"> USERS</a></li>
+                        <li><a href="subscription.html"><img src="assets/img/user/card.png"> SUBSCRIPTION</a></li>
                     </ul>
                 </div>
             </div>
@@ -237,7 +293,7 @@
                                             <li>12:56 AM</li>
                                         </ul>
                                     </td>
-                                    <td><a href="#"><img src="assets/img/user/settion.png"></a></td>
+                                    <td><a href="setting.html"><img src="assets/img/user/settion.png"></a></td>
                                     <td><a href="#"><img src="assets/img/user/delet.png"></a></td>
                                 </tr>
                                 <tr>
@@ -260,7 +316,7 @@
                                             <li>12:56 AM</li>
                                         </ul>
                                     </td>
-                                    <td><a href="#"><img src="assets/img/user/settion.png"></a></td>
+                                    <td><a href="setting.html"><img src="assets/img/user/settion.png"></a></td>
                                     <td><a href="#"><img src="assets/img/user/delet.png"></a></td>
                                 </tr>
                                 <tr>
@@ -283,7 +339,7 @@
                                             <li>12:56 AM</li>
                                         </ul>
                                     </td>
-                                    <td><a href="#"><img src="assets/img/user/settion.png"></a></td>
+                                    <td><a href="setting.html"><img src="assets/img/user/settion.png"></a></td>
                                     <td><a href="#"><img src="assets/img/user/delet.png"></a></td>
                                 </tr>
                                 <tr>
@@ -306,7 +362,7 @@
                                             <li>12:56 AM</li>
                                         </ul>
                                     </td>
-                                    <td><a href="#"><img src="assets/img/user/settion.png"></a></td>
+                                    <td><a href="setting.html"><img src="assets/img/user/settion.png"></a></td>
                                     <td><a href="#"><img src="assets/img/user/delet.png"></a></td>
                                 </tr>
                             </tbody>

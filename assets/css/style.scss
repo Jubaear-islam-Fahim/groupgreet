@@ -355,10 +355,14 @@ p {
         }
     }
 
+    
+}
+
+.log-bar{
     .dropdown-toggle {
         img {
-            width: 40px;
-            height: 40px;
+            width: 40px !important;
+            height: 40px !important;
         }
 
         &::after {
@@ -602,7 +606,6 @@ p {
 
     .h1 {
         font-weight: 400;
-        font-size: 40px;
         line-height: 60px;
         color: #393939;
 
@@ -767,7 +770,7 @@ p {
 
 .testimonial-left {
     .h1 {
-        font-weight: normal; 
+        font-weight: normal;
         line-height: 60px;
         color: #393939;
         max-width: 373px;
@@ -1009,6 +1012,7 @@ p {
 .pricing-banner {
     background: #F5FCFE;
     position: relative;
+    z-index: 1;
 
     &::before,
     &::after {
@@ -1017,6 +1021,7 @@ p {
         bottom: 0;
         width: 386px;
         height: 225px;
+        z-index: -1;
     }
 
     &::before {
@@ -2860,12 +2865,30 @@ p {
     .header-main .logo-top .try_bgn {
         display: none;
     }
+    .back-card .h1 { 
+        line-height: 40px;
+    }
+    .dashboard-menu-content li { 
+        margin: 0 12px;
+    }
+    .log-bar{
+        .nav-link.dropdown-toggle {
+            padding: 0;
+        }
+    }
+    .profile-connect .login-gf li a { 
+        font-size: 14px; 
+    }
 }
 
 
 @media (min-width: 320px) and (max-width: 991.98px) {
     .mobile-show {
         display: block;
+    }
+
+    .desktop-show {
+        display: none;
     }
 
     .header-area {
@@ -2883,15 +2906,21 @@ p {
     }
 
     .phone-logins {
+        display: flex;
+        gap: 10px;
+
         a {
             font-weight: 500;
-            font-size: 18px;
             color: #393939;
+            width: 30px;
+            height: 35px;
+            border-radius: 5px;
+            font-size: 18px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
         }
 
-        span {
-            margin: 0 10px;
-        }
     }
 
     .phone-toggler {
@@ -2902,15 +2931,19 @@ p {
         outline: none !important;
         box-shadow: none;
     }
-    .navbar-toggler:focus{
+
+    .navbar-toggler:focus {
         box-shadow: none;
     }
-    .phone-search-box{
+
+    .phone-search-box {
         position: relative;
-        input{
+
+        input {
             padding: 7px 40px 7px 15px;
         }
-        .btn{
+
+        .btn {
             position: absolute;
             right: 0;
             top: 50%;
@@ -2918,73 +2951,336 @@ p {
 
         }
     }
-    .navbar_area .all_occasions { 
+
+    .navbar_area .all_occasions {
         column-count: 1;
         gap: 24px;
         padding: 4px 0 0 15px;
     }
+
     .navbar_area .seasonal-cc {
         padding: 20px 15px 25px;
     }
 
     .navbar_area .all_occasions a {
-        line-height: 33px; 
+        line-height: 33px;
         font-size: 16px;
         display: block;
     }
-    .sign-right{
+
+    .sign-right {
         display: none;
     }
+
+    .faq-page-content,
+    .ocassion-card-banner-content,
     .features-content,
     .hero-content,
-    .sign-area { 
+    .sign-area {
         grid-template-columns: 1fr;
     }
 
-    .card-time-item .card-img { 
+    .card-time-item .card-img {
         padding-bottom: 20px;
     }
-    .testimonial-area::after {  
-        top: 50%;  
+
+    .testimonial-area::after {
+        top: 50%;
     }
-    .testimonial-left .h1 { 
+
+    .testimonial-left .h1 {
         max-width: 100%;
         margin-bottom: 50px;
         text-align: center;
     }
-    .questions-area p br{
+
+    .questions-area p br {
         display: none;
     }
-    .questions-area .accordion-button, .questions-area .accordion-button:not(.collapsed) { 
+
+    .questions-area .accordion-button,
+    .questions-area .accordion-button:not(.collapsed) {
         line-height: 28px;
     }
-    .footer-area .footer-widte-content { 
+
+    .footer-area .footer-widte-content {
         gap: 26px;
         margin-top: 30px;
     }
 
-    .car-row{
+    .car-row {
         row-gap: 40px;
     }
+
     .reasons-greetions-content {
-       grid-template-columns: repeat(2, 1fr);
-      
+        grid-template-columns: repeat(2, 1fr);
+
     }
-    .pricing-banner::before, .pricing-banner::after {
-       
+
+    .pricing-banner::before,
+    .pricing-banner::after {
+
         width: 266px;
         height: 125px;
     }
+
     .pricing-banner .pricing-title {
-       
+
         padding: 70px 0 50px;
     }
+
     .pricing-banner .pricing-title .h2 {
         margin-bottom: 28px;
     }
+
     .pricing-content {
         grid-template-columns: repeat(2, 1fr);
-         
+
     }
 
+    .pricing-preview-content .pricing-preview-item .h2 {
+
+        line-height: 45px;
+    }
+
+    .do-this-area .do-this-img img {
+        width: 100% !important;
+    }
+
+    .product-list .product-ul {
+        border: 1px solid #C4C4C4;
+        border-bottom: 0;
+        padding: 26px 25px;
+        gap: 10px;
+
+        &:last-child {
+            border-bottom: 1px solid #C4C4C4;
+        }
+    }
+
+    .product-list {
+        border: 0;
+        padding-bottom: 0;
+    }
+
+    .product-list-main {
+        grid-template-columns: 1fr;
+    }
+
+    .product-list-content .product-ty {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 19px;
+        padding: 50px 0 0 0px;
+    }
+
+    .product-list-modal {
+        .theme-btn {
+            width: 200px;
+            margin-left: auto;
+        }
+    }
+
+    .ocassion-card-banner-content .ocassion-card-banner-img {
+        display: none;
+    }
+
+    .ocassion-card-banner {
+        display: grid;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-thank {
+        padding-left: 0;
+    }
+
+    .faq-search form input {
+        min-width: 100%;
+    }
+
+    .log-bar .dropdown-toggle::after{
+        margin-left: 0;
+    }
+
+    .dashboard-menu-content li { 
+        margin: 10px 15px;
+    }
+    .slick-dotted.slick-slider { 
+        margin-top: 30px;
+    }
+    .activity-summary {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .send-friends {
+        margin-left: 0px;
+    }
+    .back-card, .back-card-item { 
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .back-card .h1 { 
+        line-height: 40px;
+    }
+    .card-activity-tab .activity-list li span {
+        width: 98px; 
+        font-size: 14px; 
+    }
+    .card-activity-tab .activity-list li { 
+        grid-template-columns: 1fr 95px; 
+        gap: 10px;
+    }
+    .log-bar{
+        .nav-link.dropdown-toggle {
+            padding: 4px ;
+        }
+    }
+    .activity-record { 
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .activity-record tbody td { 
+        min-width: 100px;
+    }
+    .setting-img{
+        margin-top: 40px;
+    }
+
+    .profile-connect{
+        margin-top: 40px;
+    }
+    .favorites-area .product-list-content .product-ty {
+        padding: 39px 0 0 0px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .footer-area .footer-widte-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+
+    .pt-100 {
+        padding-top: 70px;
+    }
+
+    .pb-100 {
+        padding-bottom: 70px;
+    }
+
+    .py-100 {
+        padding: 70px 0;
+    }
+
+    .pt-80 {
+        padding-top: 40px;
+    }
+
+    .pb-80 {
+        padding-bottom: 40px;
+    }
+
+    .py-80 {
+        padding: 40px 0;
+    }
+
+    .hero-content .h1 {
+        line-height: 48px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        line-height: 29px;
+        margin-top: 25px;
+    }
+
+    .pricing-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing-preview-content {
+        grid-template-columns: 1fr;
+        gap: 65px;
+        margin-top: 50px;
+    }
+
+    .pricing-preview-content::after {
+        display: none;
+    }
+
+    .pricing-content .pricing-item {
+        width: 290px;
+        margin: 0 auto;
+    }
+
+    .pricing-banner::before,
+    .pricing-banner::after {
+        width: 163px;
+        height: 89px;
+    }
+
+    .footer-area .container {
+        padding: 40px 30px;
+    }
+
+    .product-list-content .product-ty {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-banner-area::after,
+    .about-banner-area::before {
+        display: none;
+    }
+
+    .reasons-greetions-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .paperless-keep-content .paperless-keep-item .number {
+
+        font-size: 27px;
+        line-height: 50px;
+    }
+
+    .about-feature-img img {
+        width: 100%;
+    }
+
+    .how-work-area .how-work-content p {
+        width: auto;
+    }
+
+    .containt-title img {
+        width: 100%;
+    }
+
+    .faq-page-content .accordion-button,
+    .faq-page-content .accordion-button:not(.collapsed) {
+
+        font-size: 17px;
+        line-height: 29px;
+    }
+    .setting-edit label { 
+        font-size: 14px;
+        line-height: 24px; 
+    }
+
+    .profile-connect .social-ss, .profile-connect .login-gf, .profile-connect .profile-input{
+        grid-template-columns: 1fr;
+    }
+    .profile-not .form-switch { 
+        height: auto;
+        padding: 8px 15px; 
+        display: grid;
+        grid-template-columns: 1fr 35px;
+    }
+    .profile-connect { 
+        padding: 10px 13px;
+    }
+    .profile-connect .login-gf li a{
+        font-size: 14px;
+    }
 }

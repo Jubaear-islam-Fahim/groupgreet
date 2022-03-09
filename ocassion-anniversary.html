@@ -39,24 +39,23 @@
                         </ul>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     </header>
     <nav class="navbar navbar-expand-lg navbar_area sticky-top">
-        <div class="container-fluid"> 
-            <button class="navbar-toggler phone-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler phone-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="fa-solid fa-bars"></span>
             </button>
             <a class="navbar-brand mobile-show" href="index.html">
                 <img src="assets/img/logo.png" alt="logo">
             </a>
-            <div class="mobile-show"> 
+            <div class="mobile-show">
                 <div class="phone-logins">
-                    <a href="sign.html">SIGN IN</a>
-                    <span>|</span>
-                    <a href="sign.html">LOGIN</a>
-                </div> 
+                    <a href="sign.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="sign.html"><i class="fa-solid fa-user"></i></a>
+                </div>
             </div>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
@@ -76,7 +75,7 @@
                             </form>
                         </li>
                         <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="pricing.html">PRICING</a></li> 
+                        <li><a href="pricing.html">PRICING</a></li>
                     </ul>
                     <ul class="navbar-nav menu_list justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item dropdown has-megamenu">
@@ -154,7 +153,7 @@
                             <a class="nav-link" href="ocassion-anniversary.html"> NEW </a>
                         </li>
                     </ul>
-                    
+
                 </div>
             </div>
         </div>
@@ -185,8 +184,124 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    <div class="product-list-modal mobile-show pt-100">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn theme-btn" data-bs-toggle="modal"
+                            data-bs-target="#filtersModalHead">
+                            <i class="fa-solid fa-filter"></i> Filters
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="filtersModalHead" tabindex="-1" aria-labelledby="filtersModal"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="filtersModal">Filters</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="product-list pt-0">
+                                            <ul class="product-ul">
+                                                <div class="list-search">
+                                                    <form action="/">
+                                                        <input type="search">
+                                                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                                    </form>
+                                                </div>
+                                                <li><a href="#" class="active">Thank you</a></li>
+                                                <li><a href="#">Birthday</a></li>
+                                                <li><a href="#">For supportt</a></li>
+                                                <li><a href="#">Graduation</a></li>
+                                                <li><a href="#">Teacher appreciation</a></li>
+                                                <li><a href="#">Wedding</a></li>
+                                            </ul>
+                                            <ul class="product-ul">
+                                                <div class="product-list-title">
+                                                    <div class="h6">THEMES</div>
+                                                </div>
+                                                <li>
+                                                    <div class="check-themes">
+                                                        <input class="form-check-input" type="checkbox" value="" id="Business-check">
+                                                        <label for="Business-check">
+                                                            Business
+                                                        </label>
+                                                    </div>
+                
+                                                </li>
+                                                <li>
+                                                    <div class="check-themes">
+                                                        <input class="form-check-input" type="checkbox" value="" id="Cute-check">
+                                                        <label for="Cute-check">
+                                                            Cute
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="check-themes">
+                                                        <input class="form-check-input" type="checkbox" value="" id="Floral-check">
+                                                        <label for="Floral-check">
+                                                            Floral
+                                                        </label>
+                
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="check-themes">
+                                                        <input class="form-check-input" type="checkbox" value="" id="Unicorn-check">
+                                                        <label for="Unicorn-check">
+                                                            Unicorn
+                                                        </label>
+                
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="product-ul">
+                                                <div class="product-list-title">
+                                                    <div class="h6">SORT BY</div>
+                                                </div>
+                                                <li>
+                                                    <select class="wide">
+                                                        <option>Most Popular</option>
+                                                        <option>Newest Design</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                            <ul class="product-ul">
+                                                <div class="product-list-title">
+                                                    <div class="h6">PHOTO</div>
+                                                </div>
+                                                <li>
+                                                    <div class="check-themes">
+                                                        <input class="form-check-input" type="checkbox" value="" id="Photo-check">
+                                                        <label for="Photo-check">
+                                                            Photo Only
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="product-ul">
+                                                <div class="product-list-title">
+                                                    <div class="h6">CARD ORIENTATION</div>
+                                                </div>
+                                                <li>
+                                                    <div class="orientation-radio">
+                                                        <div class="orientation-item active"></div>
+                                                        <div class="orientation-item"></div>
+                                                        <div class="orientation-item"></div>
+                                                    </div>
+                                                </li>
+                
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="product-list-main">
-                        <div class="product-list">
+                        <div class="product-list desktop-show">
                             <ul class="product-ul">
                                 <div class="list-search">
                                     <form action="/">
@@ -502,7 +617,7 @@
     <footer class="footer-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 offset-md-3">
                     <div class="footer-item">
                         <div class="footer-logo">
                             <a href="#"><img src="assets/img/logo.png" alt="logo"></a>
@@ -515,23 +630,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-6">
+                <div class="col-lg-8 col-md-12">
                     <div class="footer-item footer-widte-content">
                         <ul class="footer-nav">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Group Cards</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="ocassion-anniversary.html">Group Cards</a></li>
                             <li><a href="#">How it works</a></li>
-                            <li><a href="#">Pricing</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
                             <li><a href="#">Start a card</a></li>
                         </ul>
                         <ul class="footer-nav">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                             <li><a href="#">Chat with Us</a></li>
                         </ul>
                         <div class="footer-wid-right">
                             <ul class="footer-nav">
-                                <li><a href="#">FAQ</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="#">Terms of use</a></li>
                             </ul>
@@ -560,12 +675,12 @@
     </div>
 
 
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
