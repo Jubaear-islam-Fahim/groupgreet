@@ -504,6 +504,17 @@ p {
   font-size: 13px;
 }
 
+.navbar_area .has-megamenu .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: 2px;
+  content: "\f078";
+  border: 0;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 13px;
+}
+
 @media all and (min-width: 992px) {
   .navbar .has-megamenu {
     position: static !important;
@@ -884,7 +895,7 @@ p {
   margin-bottom: 15px;
 }
 
-.footer-area .footer-soils {
+.footer-soils {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -892,19 +903,7 @@ p {
   margin-top: 30px;
 }
 
-.footer-area .footer-soils li:nth-child(3n + 1) a {
-  background-color: #1877F2;
-}
-
-.footer-area .footer-soils li:nth-child(3n + 2) a {
-  background-color: #F00073;
-}
-
-.footer-area .footer-soils li:nth-child(3n + 3) a {
-  background-color: #E60023;
-}
-
-.footer-area .footer-soils li a {
+.footer-soils li a {
   width: 39px;
   height: 39px;
   display: -ms-grid;
@@ -2456,31 +2455,46 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
-  background: #1877F2;
   font-size: 17px;
 }
 
-.profile-social .social-ss li .fa-facebook {
+.footer-soils i {
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 17px;
+}
+
+.fa-facebook {
   background: #1877F2;
 }
 
-.profile-social .social-ss li .fa-pinterest {
+.fa-pinterest {
   background: #E60023;
 }
 
-.profile-social .social-ss li .fa-instagram {
+.fa-instagram {
   background: #F00073;
 }
 
-.profile-social .social-ss li .fa-twitter {
+.fa-twitter {
   background: #1DA1F2;
 }
 
-.profile-social .social-ss li .fa-telegram {
+.fa-telegram {
   background: #1877F2;
 }
 
-.profile-social .social-ss li .fa-linkedin {
+.fa-linkedin {
   background: #0088CC;
 }
 
@@ -2779,6 +2793,53 @@ p {
   margin-left: 5px;
 }
 
+.demo-edit {
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+}
+
+.demo-edit a {
+  width: 220px;
+  height: 45px;
+  border: 2px solid #4476BD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  color: #4476BD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+
+.demo-edit a img {
+  height: 18px;
+}
+
+.demo-link {
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 46px;
+  display: inline-block;
+  padding: 5px 21px;
+  font-size: 13px;
+}
+
+.demo-link i {
+  margin-left: 10px;
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .navbar_area .menu_list {
     gap: 20px;
@@ -3011,7 +3072,8 @@ p {
   .send-friends {
     margin-left: 0px;
   }
-  .back-card, .back-card-item {
+  .back-card,
+  .back-card-item {
     display: -ms-grid;
     display: grid;
     -webkit-box-align: center;
@@ -3058,16 +3120,24 @@ p {
     -ms-grid-columns: 1fr 21% 19%;
         grid-template-columns: 1fr 21% 19%;
   }
-  .users-table th, .users-table td {
+  .users-table th,
+  .users-table td {
     min-width: 160px;
   }
-  .users-table th:first-child, .users-table td:first-child {
+  .users-table th:first-child,
+  .users-table td:first-child {
     min-width: 208px;
   }
   .footer-area .row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .back-card {
+    padding: 26px 16px;
+  }
+  .slick-dotted.slick-slider {
+    margin-top: 0;
   }
 }
 
@@ -3162,7 +3232,9 @@ p {
     font-size: 14px;
     line-height: 24px;
   }
-  .profile-connect .social-ss, .profile-connect .login-gf, .profile-connect .profile-input {
+  .profile-connect .social-ss,
+  .profile-connect .login-gf,
+  .profile-connect .profile-input {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -3191,6 +3263,61 @@ p {
   }
   .subscript-active .subscript-active-box .butn {
     margin-left: 0;
+  }
+  .sign-left {
+    padding: 20px 20px 20px 20px;
+  }
+  .slick-dotted.slick-slider {
+    margin-top: 30px;
+  }
+  .summary-grid .summary-item .number {
+    font-size: 31px;
+  }
+  .summary-grid {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  a.navbar-brand.mobile-show {
+    margin-right: 0;
+  }
+  a.navbar-brand.mobile-show img {
+    height: 25px;
+  }
+  .theme-btn {
+    font-size: 17px;
+    line-height: 32px;
+    padding: 7px 13px;
+  }
+  .hero-content .h1 {
+    line-height: 40px;
+  }
+  .testimonial-slid .testimonial-item {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .testimonial-slid .slick-dots {
+    left: 0;
+  }
+  .testimonial-left .h1 {
+    line-height: 42px;
+  }
+  .testimonial-area {
+    overflow: hidden;
+  }
+  .paperless-keep-content {
+    gap: 10px;
+  }
+  .paperless-keep-content .paperless-keep-item p {
+    font-size: 12px;
+  }
+  .card-activity-tab ul.nav button {
+    font-size: 13px;
+  }
+  .card-activity-tab ul.nav button span {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

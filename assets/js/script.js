@@ -34,8 +34,7 @@
 
     if ($('.testimonial-slid').length) {
         $('.testimonial-slid').slick({
-            dots: true,
-            speed: 7000,
+            dots: true,  
             autoplay: true,
             customPaging: function (slider, i) {
                 return '<i class="fas fa-circle"></i>';
@@ -44,9 +43,8 @@
     }
     if ($('.back-card-slid').length) {
         $('.back-card-slid').slick({
-            dots: true,
-            dots: true,
-            speed: 7000,
+            dots: true, 
+            autoplay: true,
             customPaging: function (slider, i) {
                 return '<i class="fas fa-circle"></i>';
             }
