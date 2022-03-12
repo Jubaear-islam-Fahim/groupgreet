@@ -2903,17 +2903,20 @@ p {
     width: 17px;
     margin-left: 5px;
 }
-
-.demo-edit {
-    display: grid;
-    gap: 15px;
+.demo-left-cc{
     position: absolute;
     z-index: 11;
     background: #fff;
-    padding: 8px 8px;
+    padding: 8px 8px; 
+    height: 58%;
+}
+.demo-edit {
+    display: grid;
+    gap: 15px;
+    
 
     a {
-        width: 220px;
+        width: 195px;
         height: 45px;
         border: 2px solid #4476BD;
         box-sizing: border-box;
@@ -3023,15 +3026,15 @@ p {
 
     .swiper-button-next,
     .swiper-button-prev {
-        width: 51px;
-        height: 51px;
+        width: 40px;
+        height: 40px;
         border-radius: 100px;
         background: #5BC6D8;
     }
 
     .swiper-button-next:after,
     .swiper-button-prev:after {
-        font-size: 19px;
+        font-size: 16px;
         color: #fff;
     }
 
@@ -3088,7 +3091,7 @@ p {
         font-size: 14px;
     }
 }
-
+ 
 
 @media (min-width: 320px) and (max-width: 991.98px) {
     .mobile-show {
@@ -3418,7 +3421,7 @@ p {
     }
 
     .demo-slid {
-        margin-top: 43px;
+        margin-top: 10px;
     }
 
     .demo-content {
@@ -3687,6 +3690,15 @@ p {
         grid-template-columns: 1fr 75px;
         overflow: hidden;
         width: 100%;
+    }
+    .demo-left-cc {
+        position: relative;
+        padding: 0;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .demo-slid {
+        margin-top: 40px;
     }
 
 }

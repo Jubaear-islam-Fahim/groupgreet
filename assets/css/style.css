@@ -2829,18 +2829,22 @@ p {
   margin-left: 5px;
 }
 
-.demo-edit {
-  display: -ms-grid;
-  display: grid;
-  gap: 15px;
+.demo-left-cc {
   position: absolute;
   z-index: 11;
   background: #fff;
   padding: 8px 8px;
+  height: 58%;
+}
+
+.demo-edit {
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
 }
 
 .demo-edit a {
-  width: 220px;
+  width: 195px;
   height: 45px;
   border: 2px solid #4476BD;
   -webkit-box-sizing: border-box;
@@ -2951,15 +2955,15 @@ p {
 
 .demo-swip .swiper-button-next,
 .demo-swip .swiper-button-prev {
-  width: 51px;
-  height: 51px;
+  width: 40px;
+  height: 40px;
   border-radius: 100px;
   background: #5BC6D8;
 }
 
 .demo-swip .swiper-button-next:after,
 .demo-swip .swiper-button-prev:after {
-  font-size: 19px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -3290,7 +3294,7 @@ p {
     max-width: calc(54% - 30px);
   }
   .demo-slid {
-    margin-top: 43px;
+    margin-top: 10px;
   }
   .demo-content {
     text-align: center;
@@ -3523,6 +3527,15 @@ p {
         grid-template-columns: 1fr 75px;
     overflow: hidden;
     width: 100%;
+  }
+  .demo-left-cc {
+    position: relative;
+    padding: 0;
+    height: auto;
+    margin-bottom: 0;
+  }
+  .demo-slid {
+    margin-top: 40px;
   }
 }
 
