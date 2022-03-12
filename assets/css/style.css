@@ -79,7 +79,7 @@ p {
   border-radius: 4px;
   font-weight: 400;
   font-size: 20px;
-  line-height: 34px;
+  line-height: 30px;
   color: #FFFFFF;
   padding: 7px 15px;
   border: 2px solid #F2B600;
@@ -104,6 +104,11 @@ p {
   background: #F2B600;
   border: 2px solid #F2B600;
   color: #FFFFFF;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #F2B600;
 }
 
 .btn__group {
@@ -148,6 +153,15 @@ p {
 
 .section-bg {
   background: #F5FCFE;
+}
+
+.error-content .theme-btn.btn-2 {
+  border: 2px solid #4476BD;
+  color: #4476BD;
+}
+
+.error-content .theme-btn.btn-2:hover {
+  color: #fff;
 }
 
 .sign-area {
@@ -287,13 +301,15 @@ p {
 }
 
 .sign-right {
-  height: 100vh;
+  min-height: 100vh;
   margin-left: auto;
 }
 
 .sign-right img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .mobile-show {
@@ -310,6 +326,7 @@ p {
   border-radius: 5px;
   padding: 0 10px;
   margin-left: 40px;
+  font-size: 14px;
 }
 
 .header-main .sid_top {
@@ -424,7 +441,8 @@ p {
 }
 
 .log-bar .user-tops .edit-user:hover {
-  color: #1877F2;
+  color: #F2B600;
+  border-color: #F2B600;
 }
 
 .navbar_area {
@@ -647,7 +665,6 @@ p {
 .card-time-item .text .h3 {
   font-weight: normal;
   padding-bottom: 18px;
-  font-weight: 300;
 }
 
 .card-time-item .text p {
@@ -677,7 +694,7 @@ p {
 }
 
 .features-content .features-text .h3 {
-  font-weight: 300;
+  font-weight: normal;
 }
 
 .features-content .features-text p {
@@ -873,7 +890,6 @@ p {
   font-size: 18px;
   line-height: 33px;
   color: #393939;
-  padding-left: 50px;
 }
 
 .footer-area .footer-widte-content {
@@ -889,6 +905,10 @@ p {
   font-size: 19px;
   line-height: 28px;
   color: #393939;
+}
+
+.footer-area .footer-item ul a:hover {
+  color: #F2B600;
 }
 
 .footer-area .footer-item .footer-nav li {
@@ -976,6 +996,12 @@ p {
   border-color: #5BC6D8;
 }
 
+.pricing-plans-area .pricing-card .theme-btn:hover {
+  color: #fff;
+  background: #F2B600;
+  border-color: #F2B600;
+}
+
 .pricing-content {
   display: -ms-grid;
   display: grid;
@@ -987,7 +1013,7 @@ p {
 .pricing-content .pricing-item {
   border: 2px solid #C4C4C4;
   text-align: center;
-  padding: 30px 40px;
+  padding: 30px 40px 40px;
 }
 
 .pricing-content .pricing-item .h4 {
@@ -1041,7 +1067,7 @@ p {
       grid-template-columns: 1fr 1fr;
   gap: 150px;
   position: relative;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .pricing-preview-content::after {
@@ -1419,6 +1445,7 @@ p {
 .about-banner-area .about-content .h1 {
   color: #393939;
   padding-bottom: 30px;
+  font-weight: 400;
 }
 
 .about-banner-area .about-content p {
@@ -1429,7 +1456,7 @@ p {
 
 .about-feature .about-feature-text .h2 {
   line-height: 60px;
-  font-weight: normal;
+  font-weight: 500;
   color: #393939;
 }
 
@@ -2270,9 +2297,18 @@ p {
   border-color: #F2B600;
 }
 
+.form-check .form-check-input {
+  margin-top: 7px;
+}
+
 .form-check-input:checked {
   background-color: #9BDEBE;
   border-color: #9BDEBE;
+}
+
+.radio .form-check-input:checked {
+  background-color: #4476BD;
+  border-color: #4476BD;
 }
 
 .profile-page-area .profile-edit {
@@ -2797,6 +2833,10 @@ p {
   display: -ms-grid;
   display: grid;
   gap: 15px;
+  position: absolute;
+  z-index: 11;
+  background: #fff;
+  padding: 8px 8px;
 }
 
 .demo-edit a {
@@ -3136,8 +3176,15 @@ p {
     padding: 50px 0 0 0px;
   }
   .product-list-modal .theme-btn {
-    width: 200px;
-    margin-left: auto;
+    width: 129px;
+    position: fixed;
+    bottom: 6px;
+    z-index: 11;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    line-height: 15px;
   }
   .ocassion-card-banner-content .ocassion-card-banner-img {
     display: none;
@@ -3252,6 +3299,12 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .demo-edit a {
+    width: 144px;
+    height: 36px;
+    font-size: 11px;
+    line-height: 30px;
   }
 }
 
@@ -3403,6 +3456,74 @@ p {
   .demo-swip .swiper-pagination-progressbar {
     width: 74% !important;
   }
+  .error-content .btn__group {
+    display: -ms-grid;
+    display: grid;
+    gap: 14px;
+  }
+  .theme-btn {
+    font-size: 14px;
+    line-height: 23px;
+    padding: 5px 15px;
+  }
+  .error-content img {
+    width: 100%;
+  }
+  .footer-item {
+    text-align: center;
+  }
+  ul.footer-nav {
+    text-align: left;
+  }
+  .about-feature .about-feature-text .h2 {
+    line-height: 43px;
+  }
+  .setting-edit form {
+    padding-left: 0;
+  }
+  .demo-edit {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .demo-edit a img {
+    height: 13px;
+  }
+  .demo-edit a {
+    width: auto;
+    height: 36px;
+    font-size: 11px;
+    line-height: 30px;
+    gap: 7px;
+    padding: 0 8px;
+    border-block-width: 1px;
+  }
+  .demo-swip .swiper-button-next, .demo-swip .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+  .demo-swip .swiper-pagination-progressbar {
+    width: 70% !important;
+    top: -4px;
+  }
+  .footer-soils {
+    gap: 3px;
+  }
+  .demo-link {
+    padding: 5px 7px;
+    font-size: 12px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 75px;
+        grid-template-columns: 1fr 75px;
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 420px) {
@@ -3414,7 +3535,7 @@ p {
   }
   .theme-btn {
     font-size: 17px;
-    line-height: 32px;
+    line-height: 26px;
     padding: 7px 13px;
   }
   .hero-content .h1 {
@@ -3461,11 +3582,13 @@ p {
     overflow: hidden;
     width: 100%;
   }
-  .demo-swip .swiper-button-next, .demo-swip .swiper-button-prev {
+  .demo-swip .swiper-button-next,
+  .demo-swip .swiper-button-prev {
     width: 28px;
     height: 28px;
   }
-  .demo-swip .swiper-button-next:after, .demo-swip .swiper-button-prev:after {
+  .demo-swip .swiper-button-next:after,
+  .demo-swip .swiper-button-prev:after {
     font-size: 11px;
     color: #fff;
   }
@@ -3474,6 +3597,28 @@ p {
   }
   .demoSwiper .swiper-slide {
     max-width: calc(80% - 30px);
+  }
+  .sign-left form .forget_btn a {
+    font-size: 16px;
+    margin: 0 8px;
+  }
+  .card-time-item {
+    padding: 0 20px;
+  }
+  .send-friends .title {
+    line-height: 33px;
+    display: -ms-grid;
+    display: grid;
+  }
+  .back-card-slid {
+    overflow: hidden;
+  }
+  .dashboard-menu-content li {
+    margin: 10px 9px;
+  }
+  .demo-edit {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 /*# sourceMappingURL=style.css.map */

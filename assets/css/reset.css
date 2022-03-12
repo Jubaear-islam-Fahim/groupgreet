@@ -43,7 +43,7 @@ table {
 a{
     text-decoration: none;
 }
-
+textarea,
 input, input:focus button, a{
 	outline: none !important;
 	box-shadow: none !important;
