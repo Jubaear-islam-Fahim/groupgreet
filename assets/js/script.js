@@ -34,7 +34,7 @@
 
     if ($('.testimonial-slid').length) {
         $('.testimonial-slid').slick({
-            dots: true,  
+            dots: true,
             autoplay: true,
             customPaging: function (slider, i) {
                 return '<i class="fas fa-circle"></i>';
@@ -43,7 +43,7 @@
     }
     if ($('.back-card-slid').length) {
         $('.back-card-slid').slick({
-            dots: true, 
+            dots: true,
             autoplay: true,
             customPaging: function (slider, i) {
                 return '<i class="fas fa-circle"></i>';
@@ -51,6 +51,50 @@
         });
     }
  
+
+    var swiper = new Swiper(".demoSwiper", {
+        effect: "coverflow",
+        loop: false,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,  
+        },
+        breakpoints: {
+            1000: {
+                coverflowEffect: {
+                    depth: 250,
+                    modifier: 2,
+                    slideShadows: true,
+                },
+            },
+            640: {
+                coverflowEffect: {
+                    depth: 50,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+            },
+            375: {
+                coverflowEffect: {
+                    depth: 20,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+            }
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
 
 
 })(jQuery);

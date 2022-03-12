@@ -2840,6 +2840,106 @@ p {
   margin-left: 10px;
 }
 
+.demo-slid {
+  position: relative;
+}
+
+.demo-slid .demo-item img {
+  width: 100%;
+}
+
+.next-pp {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.demoSwiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  max-width: calc(40% - 30px);
+}
+
+.demoSwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 21px rgba(33, 56, 69, 0.13);
+          box-shadow: 0px 4px 21px rgba(33, 56, 69, 0.13);
+}
+
+.demoSwiper .swiper-button-next:after,
+.demoSwiper .swiper-button-prev:after {
+  display: none;
+}
+
+.demoSwiper .swiper-slide-prev {
+  -webkit-transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(0deg) scale(1) translateX(145px) !important;
+          transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(0deg) scale(1) translateX(145px) !important;
+}
+
+.demoSwiper .swiper-slide-next {
+  -webkit-transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(0deg) scale(1) translateX(-145px) !important;
+          transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(0deg) scale(1) translateX(-145px) !important;
+}
+
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-left {
+  background: none !important;
+}
+
+.demo-btn {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.demo-swip {
+  position: relative;
+}
+
+.demo-swip .swiper-pagination-progressbar {
+  width: 80% !important;
+  margin: 0 auto;
+  right: 0;
+}
+
+.demo-swip .swiper-button-next.swiper-button-disabled,
+.demo-swip .swiper-button-prev.swiper-button-disabled {
+  display: none;
+}
+
+.demo-swip .swiper-button-next,
+.demo-swip .swiper-button-prev {
+  width: 51px;
+  height: 51px;
+  border-radius: 100px;
+  background: #5BC6D8;
+}
+
+.demo-swip .swiper-button-next:after,
+.demo-swip .swiper-button-prev:after {
+  font-size: 19px;
+  color: #fff;
+}
+
+.demo-swip .swiper-pagination-progressbar-fill {
+  background: #5BC6D8;
+}
+
+.demo-swip .swiper-pagination-progressbar-fill::before {
+  content: "\f111";
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  position: absolute;
+  right: 0;
+  color: #5BC6D8;
+  top: 50%;
+  border-radius: 100%;
+  -webkit-transform: translateY(-50%) scaleX(1) scaleY(1);
+          transform: translateY(-50%) scaleX(1) scaleY(1);
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .navbar_area .menu_list {
     gap: 20px;
@@ -3139,6 +3239,20 @@ p {
   .slick-dotted.slick-slider {
     margin-top: 0;
   }
+  .demoSwiper .swiper-slide {
+    max-width: calc(54% - 30px);
+  }
+  .demo-slid {
+    margin-top: 43px;
+  }
+  .demo-content {
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 767.98px) {
@@ -3276,6 +3390,19 @@ p {
   .summary-grid {
     gap: 15px;
   }
+  .activity-page-area .activity-button li a {
+    font-size: 13px;
+    padding: 1px 13px;
+  }
+  .setting-edit .col-4 {
+    width: 49.333333%;
+  }
+  .demoSwiper .swiper-slide {
+    max-width: calc(60% - 30px);
+  }
+  .demo-swip .swiper-pagination-progressbar {
+    width: 74% !important;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 420px) {
@@ -3318,6 +3445,35 @@ p {
   }
   .card-activity-tab ul.nav button span {
     font-size: 10px;
+  }
+  .profile-social .social-ss li a {
+    gap: 6px;
+    font-size: 14px;
+    padding: 0 7px;
+  }
+  .demo-link {
+    padding: 5px 7px;
+    font-size: 12px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 75px;
+        grid-template-columns: 1fr 75px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .demo-swip .swiper-button-next, .demo-swip .swiper-button-prev {
+    width: 28px;
+    height: 28px;
+  }
+  .demo-swip .swiper-button-next:after, .demo-swip .swiper-button-prev:after {
+    font-size: 11px;
+    color: #fff;
+  }
+  .demo-swip .swiper-pagination-progressbar {
+    top: -9px;
+  }
+  .demoSwiper .swiper-slide {
+    max-width: calc(80% - 30px);
   }
 }
 /*# sourceMappingURL=style.css.map */
