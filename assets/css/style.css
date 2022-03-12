@@ -2896,8 +2896,8 @@ p {
   position: relative;
   left: 0;
   bottom: 0;
-  width: 100%;
-  margin-top: 40px;
+  width: 80%;
+  margin: 80px auto 0;
 }
 
 .demoSwiper .swiper-slide {
@@ -2946,6 +2946,7 @@ p {
   width: 80% !important;
   margin: 0 auto;
   right: 0;
+  top: -3px;
 }
 
 .demo-swip .swiper-button-next.swiper-button-disabled,

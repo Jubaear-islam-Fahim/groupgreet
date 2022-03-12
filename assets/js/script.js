@@ -50,50 +50,59 @@
             }
         });
     }
- 
 
-    var swiper = new Swiper(".demoSwiper", {
-        effect: "coverflow",
-        loop: false,
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 0,  
-        },
-        breakpoints: {
-            1000: {
-                coverflowEffect: {
-                    depth: 250,
-                    modifier: 2,
-                    slideShadows: true,
-                },
+    if ($('.demoSwiper').length) {
+        var swiper = new Swiper(".demoSwiper", {
+            effect: "coverflow",
+            loop: false,
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
             },
-            640: {
-                coverflowEffect: {
-                    depth: 50,
-                    modifier: 1,
-                    slideShadows: true,
+            breakpoints: {
+                1000: {
+                    coverflowEffect: {
+                        depth: 250,
+                        modifier: 2,
+                        slideShadows: true,
+                    },
                 },
+                640: {
+                    coverflowEffect: {
+                        depth: 50,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                },
+                375: {
+                    coverflowEffect: {
+                        depth: 20,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                }
             },
-            375: {
-                coverflowEffect: {
-                    depth: 20,
-                    modifier: 1,
-                    slideShadows: true,
-                },
-            }
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    }
+
+    if ($('.orientation-item').length) {
+        $('.orientation-item').click(function () {
+            $('.orientation-item').removeClass("active");
+            $(this).addClass("active");
+        });
+    }
+     
 
 
 
